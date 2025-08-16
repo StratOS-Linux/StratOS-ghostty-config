@@ -1,5 +1,5 @@
 post_install() {
-  echo "==> Kitty configuration has been installed to /etc/skel/.config/emacs"
+  echo "==> Kitty configuration has been installed to /etc/skel/.config/kitty"
   echo "==> To use it, copy it to your home directory:"
   echo "    cp -r /etc/skel/.config/kitty ~/.config/"
 }
