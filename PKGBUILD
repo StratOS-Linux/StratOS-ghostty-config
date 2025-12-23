@@ -1,17 +1,17 @@
 # Maintainer: @zstg <zestig@duck.com>
-pkgname=stratos-kitty-config
+pkgname=stratos-ghostty-config
 pkgver=1.0
 pkgrel=1
-pkgdesc="Kitty configuration for StratOS"
+pkgdesc="Ghostty configuration for StratOS"
 arch=('any')
 license=('GPL3')
 depends=(
-    'kitty'
+    'ghostty'
     'ttf-jetbrains-mono'
     'ttf-jetbrains-mono-nerd'
 )
 source=()
-install=stratos-kitty-config.install
+install=stratos-ghostty-config.install
 
 prepare() {
 	cp -r "$startdir/.config/" "$srcdir/"
@@ -19,5 +19,5 @@ prepare() {
 
 package() {
     install -d "$pkgdir/etc/skel/.config"
-    cp -r "$srcdir/.config/kitty/" "$pkgdir/etc/skel/.config/"
+    cp -r "$srcdir/.config/ghostty/" "$pkgdir/etc/skel/.config/"
 }
