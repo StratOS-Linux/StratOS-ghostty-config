@@ -1,7 +1,7 @@
 # Maintainer: @zstg <zestig@duck.com>
 pkgname=stratos-ghostty-config
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Ghostty configuration for StratOS"
 arch=('any')
 license=('GPL3')
